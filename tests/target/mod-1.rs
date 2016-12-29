@@ -30,6 +30,14 @@ pub mod x {
                    file: *mut FILE)
                    -> *mut FILE {
     }
+
+    impl<A, B, C, D> Foo
+        where A: 'static,
+              B: 'static,
+              C: 'static,
+              D: 'static
+    {
+    }
 }
 
 mod y {

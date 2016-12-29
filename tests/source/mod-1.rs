@@ -23,6 +23,12 @@ pub  mod x {
                    mode3: *const c_char,
                    file: *mut FILE)
                    -> *mut FILE{}
+
+    impl<A, B, C, D> Foo
+        where A: 'static,
+              B: 'static,
+              C: 'static,
+              D: 'static { }
 }
 
   mod    y    { // sup boooooiiii
